@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice10</title>
+  </head>
+  <body>
+    <div class="header">header</div>
+    <div class="sider">sider</div>
+
+    <div class="bodyColumnContainer">
+      <div class="headerSpace"></div>
+
+      <div class="bodyRowContainer">
+        <div class="siderSpace"></div>
+
+        <div class="container">
+          <div class="item">ss</div>
+          <div class="item">ss</div>
+          <div class="item">ss</div>
+          <div class="item">ss</div>
+          <div class="item">ss</div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    body {
+      width: 100%;
+      height: 100vh;
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .headerSpace {
+      width: 100vw;
+      height: 70px;
+    }
+
+    .header {
+      width: 100vw;
+      height: 70px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: blue;
+    }
+
+    .siderSpace {
+      width: 143px;
+      height: calc(100vh - 70px);
+    }
+
+    .sider {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      width: 130px;
+      height: calc(100vh - 70px);
+      background-color: rgb(67, 67, 122);
+    }
+
+    .bodyColumnContainer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bodyRowContainer {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .container {
+      width: 100%;
+      height: 100%;
+      background-color: blueviolet;
+    }
+
+    .item {
+      width: 100px;
+      height: 300px;
+      margin-top: 10px;
+      background-color: aqua;
+    }
+  </style>
+</html>

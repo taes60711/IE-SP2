@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice2</title>
+  </head>
+  <body>
+    <div class="header">title</div>
+
+    <div class="container">
+      <div class="sider">sider</div>
+      <div class="rightContainer">rightContainer</div>
+    </div>
+  </body>
+
+  <style>
+    body {
+      width: 100%;
+      height: 100vh;
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      height: calc(100vh - 70px);
+      width: 100vw;
+      background-color: blue;
+      display: flex;
+      flex-direction: row;
+    }
+    .sider {
+      height: 100%;
+      width: 130px;
+      background-color: rgb(42, 78, 78);
+    }
+    .rightContainer {
+      height: 100%;
+      width: calc(100vw - 130px);
+      background-color: rgb(197, 238, 72);
+    }
+
+    .header {
+      width: 100vw;
+      height: 70px;
+      background-color: aqua;
+    }
+  </style>
+</html>
