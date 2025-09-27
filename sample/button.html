@@ -1,0 +1,45 @@
+<!-- 参考URL:https://web-camp.io/magazine/archives/6881 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<body>
+    <button class="button">
+        クリック
+    </button>
+
+    <script>
+        document.querySelector('.button').addEventListener('click', () => {
+            alert('ボタンがクリックされました');
+        });
+    </script>
+</body>
+
+<style>
+    .button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #4CAF50; 
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /* マウスがボタンの範囲に入る */
+    .button:hover {
+        background-color: #45a049; 
+    }
+
+    /*ボタンを押している間*/
+    .button:active {
+        background-color: #3e8e41; 
+        transform: translateY(2px); 
+    }
+
+</style>
+</html>
