@@ -1,3 +1,72 @@
+
+/* 
+body　に背景画像されるCSS　: 
+　参考：https://www.sejuku.net/blog/52779
+ */
 body{
-    background-color: lightblue;
+    background-image: url('/img/bg.jpg'); /* 画像のパス */
+    background-size: cover; /* 画面全体に表示 */
+    background-attachment: fixed; /* スクロールしても背景画像を固定 */
+    background-position: center; /* 画像の位置を中央に */
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    margin: 0;
+}
+
+.loginContainer {
+    width: 400px;
+    height: 320px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px; /* 角を丸くする */
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+.inputField{
+    width: 360px;  /* loginContainerの全幅400pxため、360pxを設定しました */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border: none; /* 枠線をなくす */
+    border-bottom: 1px solid rgb(163, 161, 161); /* 下線をつける */
+    outline: none; /* フォーカス時の枠線をなくす */
+}
+
+.pwdForgot{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    width: 400px;
+    padding-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.loginButton{
+    width: 360px;  /* loginContainerの全幅400pxため、360pxを設定しました */
+    height: 40px;
+    background-color: rgb(0, 120, 215);
+    color: white;
+    border: none; /* 枠線をなくす */
+    border-radius: 5px; /* 角を丸くする */
+    cursor: pointer; /* カーソルをポインターにする */
+}
+.loginButton:hover{
+    background-color: rgb(0, 100, 195);
 }
