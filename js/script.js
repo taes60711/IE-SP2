@@ -20,7 +20,7 @@
 
     if (idValue !== '' && passwordValue !== '') {
       /// 画面遷移
-      window.location.href = '/components/home.html';
+      window.location.href = 'components/home.html';
     } else {
       alert('IDとPasswordを入力してください。');
     }
